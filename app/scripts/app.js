@@ -32,6 +32,6 @@ angular
         controller: 'HomeCtrl'
       })
       .otherwise({
-        redirectTo: '/'
+        templateUrl: '/404.html'
       });
   });

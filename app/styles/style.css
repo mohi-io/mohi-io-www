@@ -1,0 +1,374 @@
+.topmenu {
+    padding-top: 15px;
+}
+
+.navbar {
+    background-color: #f7fdfe;
+    min-height: 80px;
+}
+
+.container.navbar {
+    margin-top: 15px;
+    padding-top: 60px;
+}
+
+.login_form {
+    height: 100%;
+    width: 100%;
+}
+
+.mohiFooter {
+    background-color: #45494d;
+    position: absolute;
+    bottom: 0;
+}
+
+.loginpage {
+    min-height: 100%;
+    background: url('../gfx/login_bg.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+#map {
+    margin-top: -80px;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+}
+
+html, body {
+    height: 100%;
+}
+
+.fill {
+    min-height: 100%;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f5f5f5;
+}
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+    padding: 60px 15px 0;
+}
+
+.container .text-muted {
+    margin: 20px 0;
+}
+
+#footer {
+    background-color: #45494d;
+}
+
+#footer .navbar-nav > li a {
+    color: #aaaaaa;
+    text-transform: uppercase;
+}
+
+#footer .navbar-nav > li a:hover {
+    color: #ffffff;
+    background: transparent;
+}
+
+.separator {
+    height: 1px;
+    width: 100%;
+    background-color: #5a5e62;
+}
+
+.copyright {
+    padding: 6px;
+    width: 100%;
+    text-align: right;
+    float: right;
+    font-size: 10px;
+    color: #999;
+}
+
+#footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+code {
+    font-size: 80%;
+}
+
+/* sigin form */
+.form-signin {
+    max-width: 350px;
+    padding: 15px;
+    margin: 100px auto;
+    color: #ffffff;
+}
+
+.form-signin .form-signin-heading {
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.form-signin .checkbox {
+    margin-bottom: 10px;
+}
+
+.form-signin .checkbox {
+    font-weight: normal;
+}
+
+.form-signin .form-control {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+
+}
+
+.bluegradient {
+    background: #2fb3fb; /* Old browsers */
+    background: -moz-linear-gradient(top, #2fb3fb 0%, #1d94d5 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2fb3fb), color-stop(100%, #1d94d5)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #2fb3fb 0%, #1d94d5 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #2fb3fb 0%, #1d94d5 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #2fb3fb 0%, #1d94d5 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #2fb3fb 0%, #1d94d5 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2fb3fb', endColorstr='#1d94d5', GradientType=0); /* IE6-9 */
+}
+
+.darkbluegradient {
+    background: #356aa0; /* Old browsers */
+    background: -moz-linear-gradient(top, #356aa0 0%, #334096 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #356aa0), color-stop(100%, #334096)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #356aa0 0%, #334096 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #356aa0 0%, #334096 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #356aa0 0%, #334096 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #356aa0 0%, #334096 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#356aa0', endColorstr='#334096', GradientType=0); /* IE6-9 */
+}
+
+.blackgradient {
+    background: #45484d; /* Old browsers */
+    background: -moz-linear-gradient(top, #45484d 0%, #000000 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #45484d), color-stop(100%, #000000)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #45484d 0%, #000000 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #45484d 0%, #000000 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #45484d 0%, #000000 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #45484d 0%, #000000 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#45484d', endColorstr='#000000', GradientType=0); /* IE6-9 */
+}
+
+.form-signin button:active {
+    background: #1d94d5; /* Old browsers */
+    background: -moz-linear-gradient(top, #1d94d5 0%, #2fb3fb 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1d94d5), color-stop(100%, #2fb3fb)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #1d94d5 0%, #2fb3fb 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #1d94d5 0%, #2fb3fb 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #1d94d5 0%, #2fb3fb 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #1d94d5 0%, #2fb3fb 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1d94d5', endColorstr='#2fb3fb', GradientType=0); /* IE6-9 */
+}
+
+.form-signin button:hover {
+    color: #ddd;
+}
+
+.form-signin input {
+    background: rgba(20, 30, 36, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: #ffffff;
+}
+
+.form-signin input[type="email"] {
+    margin-bottom: 10px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+/*---- Index -----*/
+#notebook_1 {
+    background: url('../gfx/login_bg.jpg') center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+
+#notebook_2 {
+    background: url('../gfx/login_bg.jpg') center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+
+#notebook_1 p {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 100;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.repo-list tr td:nth-child(3) {
+    padding-left: 14px;
+}
+
+.repo-list tr td {
+    vertical-align: top;
+}
+
+.repo-list {
+    font-size: 18px;
+    margin: 0 auto 0 auto;
+    text-align: left;
+}
+
+.repo-name {
+    color: #5cbee2;
+}
+
+.dependence-status {
+    width: 290px;
+}
+
+.table-image-list {
+    width: 34px;
+    height: 50px;
+    background: url('../gfx/list.png') 4px -28px no-repeat;
+}
+
+.img-center {
+    margin: 0 auto;
+}
+
+.price-table-green {
+    background-color: #1bbc9d;
+    border-bottom: 3px solid #17987f;
+    padding: 10px;
+    color: #fff;
+}
+
+.price-table-blue {
+    background-color: #5ec2e7;
+    border-bottom: 3px solid #468ea9;
+    padding: 10px;
+    color: #fff;
+}
+
+.price-table-red {
+    background-color: #ff605f;
+    border-bottom: 3px solid #b14645;
+    padding: 10px;
+    color: #fff;
+}
+
+.price-table {
+    background-color: #f4f4f4;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    width: 99%;
+    padding-bottom: 20px;
+}
+
+.price-table h3 {
+    padding-top: 20px;
+    padding-bottom: 14px;
+}
+
+.price-table ul li {
+    font-size: 16px;
+    list-style: none;
+}
+
+.price-table ul {
+    margin: 0;
+    padding: 0;
+}
+
+.price-table a {
+    text-decoration: none;
+}
+
+.price-table-button {
+    background-color: #ffd75f;
+    border-bottom: 3px solid #bb9f49;
+    padding: 10px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    color: #5c5c5c;
+    margin: 0 auto;
+    width: 70%;
+    height: 44px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.price-table-button:hover {
+    height: 44px;
+    border-bottom: 1px solid #bb9f49;
+}
+
+.usage {
+    font-size: 22px;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+.usage span {
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #000;
+    padding: 3px;
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+
+

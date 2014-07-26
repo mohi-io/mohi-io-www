@@ -1,0 +1,180 @@
+<div class="container" style="padding-top:50px;">
+    <div class="row">
+        <h4 id="app_title">ZENEDITH - SWAGGER-JERSEY2-GRADLE-DEMO-APP</h4>
+
+        <div id="dependencies"><img src="gfx/dood.jpg"/></div>
+        <div id="app_version">1.3.2</div>
+
+    </div>
+    <div class="row" style="background:#fff; padding: 10px;">
+        <div class="col-lg-3 col-md-3 col-xs-6 text-center">
+            <input class="knob" data-width="150" data-angleOffset="0" data-fgColor="#ffd75f" data-skin="tron"
+                   data-thickness=".1" value="80">
+            <h4>Dependencies total</h4>
+        </div>
+        <div class="col-lg-3 col-md-3 col-xs-6 text-center">
+            <input class="knob" data-width="150" data-angleOffset="0" data-fgColor="#1bbc9d" data-skin="tron"
+                   data-thickness=".1" value="75">
+            <h4>Up to date</h4>
+        </div>
+        <div class="col-lg-3 col-md-3 col-xs-6 text-center">
+            <input class="knob" data-width="150" data-angleOffset="0" data-fgColor="#5ec2e7" data-skin="tron"
+                   data-thickness=".1" value="30">
+            <h4>Out of date</h4>
+        </div>
+        <div class="col-lg-3 col-md-3 col-xs-6 text-center">
+            <input class="knob" data-width="150" data-angleOffset="0" data-fgColor="#fe6766" data-skin="tron"
+                   data-thickness=".1" value="5">
+            <h4>Unresolved or Excceded</h4>
+        </div>
+    </div>
+
+    <div class="row" style="padding-bottom: 90px;">
+        <table class="table maintable" style="background: #fff;">
+            <tr class="tabletitle">
+                <td>DEPENDENCY</td>
+                <td>VERSION</td>
+                <td>LATEST</td>
+                <td>STATUS</td>
+            </tr>
+            <tr>
+                <td>ch.qos.logback:logback-classic</td>
+                <td>1.1.2</td>
+                <td>1.1.2</td>
+                <td><img src="gfx/ok-green.jpg"/></td>
+            </tr>
+            <tr>
+                <td>ch.qos.logback:logback-classic</td>
+                <td>1.1.2</td>
+                <td>1.1.2</td>
+                <td><img src="gfx/ok-red.jpg"/></td>
+            </tr>
+            <tr>
+                <td>ch.qos.logback:logback-classic</td>
+                <td>1.1.2</td>
+                <td>1.1.2</td>
+                <td><img src="gfx/ok-green.jpg"/></td>
+            </tr>
+            <tr>
+                <td>ch.qos.logback:logback-classic</td>
+                <td>1.1.2</td>
+                <td>1.1.2</td>
+                <td><img src="gfx/ok-blue.jpg"/></td>
+            </tr>
+            <tr>
+                <td>ch.qos.logback:logback-classic</td>
+                <td>1.1.2</td>
+                <td>1.1.2</td>
+                <td><img src="gfx/ok-blue.jpg"/></td>
+            </tr>
+            <tr>
+                <td>ch.qos.logback:logback-classic</td>
+                <td>1.1.2</td>
+                <td>1.1.2</td>
+                <td><img src="gfx/ok-green.jpg"/></td>
+            </tr>
+            <tr>
+                <td>ch.qos.logback:logback-classic</td>
+                <td>1.1.2</td>
+                <td>1.1.2</td>
+                <td><img src="gfx/ok-yellow.jpg"/></td>
+            </tr>
+            <tr>
+                <td>ch.qos.logback:logback-classic</td>
+                <td>1.1.2</td>
+                <td>1.1.2</td>
+                <td><img src="gfx/ok-green.jpg"/></td>
+            </tr>
+            <tr>
+                <td>ch.qos.logback:logback-classic</td>
+                <td>1.1.2</td>
+                <td>1.1.2</td>
+                <td><img src="gfx/ok-green.jpg"/></td>
+            </tr>
+            <tr>
+                <td>ch.qos.logback:logback-classic</td>
+                <td>1.1.2</td>
+                <td>1.1.2</td>
+                <td><img src="gfx/ok-green.jpg"/></td>
+            </tr>
+            <tr>
+                <td>ch.qos.logback:logback-classic</td>
+                <td>1.1.2</td>
+                <td>1.1.2</td>
+                <td><img src="gfx/ok-green.jpg"/></td>
+            </tr>
+            <tr>
+                <td>ch.qos.logback:logback-classic</td>
+                <td>1.1.2</td>
+                <td>1.1.2</td>
+                <td><img src="gfx/ok-green.jpg"/></td>
+            </tr>
+            <tr>
+                <td>ch.qos.logback:logback-classic</td>
+                <td>1.1.2</td>
+                <td>1.1.2</td>
+                <td><img src="gfx/ok-green.jpg"/></td>
+            </tr>
+            <tr>
+                <td>ch.qos.logback:logback-classic</td>
+                <td>1.1.2</td>
+                <td>1.1.2</td>
+                <td><img src="gfx/ok-green.jpg"/></td>
+            </tr>
+        </table>
+    </div>
+</div>
+<script src="scripts/js/jquery.knob.js"></script>
+<script>
+    $(function ($) {
+
+        $(".knob").knob({
+            change: function (value) {
+
+            },
+            release: function (value) {
+
+            },
+            cancel: function () {
+
+            },
+            format: function (value) {
+                return value
+                // return value + '%';
+            },
+            draw: function () {
+                if (this.$.data('skin') == 'tron') {
+
+                    this.cursorExt = 0.3;
+
+                    var a = this.arc(this.cv)  // Arc
+                            , pa                   // Previous arc
+                            , r = 1;
+
+                    this.g.lineWidth = this.lineWidth;
+
+                    if (this.o.displayPrevious) {
+                        pa = this.arc(this.v);
+                        this.g.beginPath();
+                        this.g.strokeStyle = this.pColor;
+                        this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, pa.s, pa.e, pa.d);
+                        this.g.stroke();
+                    }
+
+                    this.g.beginPath();
+                    this.g.strokeStyle = r ? this.o.fgColor : this.fgColor;
+                    this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, a.s, a.e, a.d);
+                    this.g.stroke();
+
+                    this.g.lineWidth = 2;
+                    this.g.beginPath();
+                    this.g.strokeStyle = this.o.fgColor;
+                    this.g.arc(this.xy, this.xy, this.radius - this.lineWidth + 1 + this.lineWidth * 2 / 3, 0, 2 * Math.PI, false);
+                    this.g.stroke();
+
+                    return false;
+                }
+            }
+        });
+    });
+</script>

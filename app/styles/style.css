@@ -370,5 +370,34 @@ code {
     margin-right: 5px;
 }
 
+/*-------- TABLE ---------*/
+#dependencies, #app_version {
+    float: right;
+}
 
+#app_version {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0 10px;
+    color: #5ec2e7;
+}
+
+#app_title {
+    float: left;
+}
+
+table.maintable {
+    text-align: center;
+}
+
+.tabletitle {
+    background: #edf1f2;
+    height: 60px;
+    text-align: center;
+}
+
+table tr.tabletitle td {
+    padding-top: 20px;
+    font-weight: bold;
+}
 

@@ -26,6 +26,38 @@ module.exports = function (grunt) {
 
     // Project settings
     yeoman: appConfig,
+    env : process.env.NODE_ENV,
+
+    ngconstant: {
+      // Options for all targets
+      options: {
+        space: '  ',
+        wrap: '\'use strict\';\n\n{%= __ngModule %}',
+        deps: false,
+        name: 'mohiApp'
+      },
+      // Environment targets
+      development: {
+        options: {
+          dest: '<%= yeoman.app %>/config/config.js'
+        },
+        constants: {
+          CONFIGURATION: {
+            serverUrl: 'http://localhost:1337'
+          }
+        }
+      },
+      production: {
+        options: {
+          dest: '<%= yeoman.dist %>/config/config.js'
+        },
+        constants: {
+          CONFIGURATION: {
+            serverUrl: 'http://mohi.io'
+          }
+        }
+      }
+    },
 
     // Watches files for changes and runs tasks based on the changed files
     watch: {
@@ -36,6 +68,12 @@ module.exports = function (grunt) {
       js: {
         files: ['<%= yeoman.app %>/scripts/{,*/}*.js'],
         tasks: ['newer:jshint:all'],
+        options: {
+          livereload: '<%= connect.options.livereload %>'
+        }
+      },
+      config: {
+        files: ['<%= yeoman.app %>/config/{,*/}*.js'],
         options: {
           livereload: '<%= connect.options.livereload %>'
         }
@@ -366,6 +404,7 @@ module.exports = function (grunt) {
 
     grunt.task.run([
       'clean:server',
+      'ngconstant:development',
       'wiredep',
       'concurrent:server',
       'autoprefixer',
@@ -389,6 +428,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', [
     'clean:dist',
+    'ngconstant:production',
     'wiredep',
     'useminPrepare',
     'concurrent:dist',
@@ -407,6 +447,10 @@ module.exports = function (grunt) {
   grunt.registerTask('default', [
     'newer:jshint',
     'test',
+    'build'
+  ]);
+
+  grunt.registerTask('heroku', [
     'build'
   ]);
 };

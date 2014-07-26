@@ -11,6 +11,7 @@ angular.module('mohiApp')
   .controller('MainCtrl', function ($scope, rest) {
 
     $scope.data = rest.projectDependencies('github', 'Zenedith', 'swagger-jersey2-gradle-demo-app');
+    $scope.stats = rest.stats();
 //    console.log($scope.data);
 
     $scope.awesomeThings = [

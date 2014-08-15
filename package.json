@@ -1,6 +1,22 @@
 {
   "name": "mohi",
   "version": "0.0.1",
+  "description": "Watching your java dependencies.",
+  "homepage": "https://github.com/mohi-io/mohi-io-www",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mohi-io/mohi-io-www.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mohi-io/mohi-io-www/issues"
+  },
+  "keywords": [
+    "dependency",
+    "management",
+    "maven",
+    "gradle",
+    "java"
+  ],
   "dependencies": {},
   "devDependencies": {
     "grunt": "^0.4.1",

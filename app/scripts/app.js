@@ -18,16 +18,13 @@ angular
     'ngTouch',
     'restmod'
   ])
+  .config(function (restmodProvider, CONFIGURATION) {
+    restmodProvider.rebase({
+      URL_PREFIX: CONFIGURATION.serverUrl
+    });
+  })
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/main', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
-      })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
-      })
       .when('/', {
         templateUrl: 'views/home.html',
         controller: 'HomeCtrl'

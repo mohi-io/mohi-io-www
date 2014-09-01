@@ -23,7 +23,7 @@ describe('Service: Project', function () {
   });
 
   it("should call for projects", function() {
-    _httpBackend.when('GET', '/projects').respond([ {repo: {name: 'sds'}}]);
+    _httpBackend.when('GET', 'http://mohi.io/projects').respond([ {repo: {name: 'sds'}}]);
     var projects = Project.$search({});
     expect(projects.length).toEqual(0);
     _httpBackend.flush();

@@ -17,10 +17,10 @@ angular.module('mohiApp')
 //      return CONFIGURATION.serverUrl;
 //    };
 
-    // Public API here
+     // Public API here
     return {
       projectDependencies: function (id) {
-//        console.log(id);
+        console.log(id);
         return Project.$search({ sort: 'updatedAt:desc' });
       },
       stats: function () {

@@ -11,5 +11,5 @@ angular.module('mohiApp')
   .controller('HomeCtrl', function ($scope, rest, Project) {
     $scope.data = rest.projectDependencies('github', 'Zenedith', 'swagger-jersey2-gradle-demo-app');
     $scope.stats = rest.stats();
-    $scope.recentProjects = Project.$search({ sort: 'updatedAt:desc' });
+//    $scope.recentProjects = Project.$search({ sort: 'updatedAt:desc' });
   });

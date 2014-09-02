@@ -8,23 +8,18 @@
  * Service in the mohiApp.
  */
 angular.module('mohiApp')
-  .service('api', function (Project) {
-//    console.log(CONFIGURATION);
-//    console.log('service');
-//    console.log(Project);
+  .service('api', function (dependenciesModel, projectModel) {
 
-//    var getServerUrl = function () {
-//      return CONFIGURATION.serverUrl;
-//    };
-
-     // Public API here
+    // Public API here
     return {
-      projectDependencies: function (id) {
-        console.log(id);
-        return Project.$search({ sort: 'updatedAt:desc' });
+      getProjectDependencies: function (id) {
+        return dependenciesModel.get({id: id});
       },
-      stats: function () {
-        return Project.$search({ sort: 'updatedAt:desc' });
+      getProjects: function () {
+        return projectModel.get();
+      },
+      getProject: function (id) {
+        return projectModel.get({id: id});
       }
     };
 

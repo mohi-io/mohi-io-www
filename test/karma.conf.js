@@ -30,13 +30,12 @@ module.exports = function(config) {
       'bower_components/angular-sanitize/angular-sanitize.js',
       'bower_components/angular-touch/angular-touch.js',
       'bower_components/angular-inflector/dist/angular-inflector.min.js',
-      'bower_components/angular-restmod/dist/angular-restmod.min.js',
       'bower_components/ng-module-introspector/ng-module-introspector.js',
 
       'bower_components/ng-improved-testing/ng-improved-testing.js',
       'app/scripts/**/*.js',
       'app/config/config.js',
-//      'test/mock/**/*.js',
+      'test/mock/**/*.js',
       'test/spec/**/*.js'
     ],
 

@@ -15,14 +15,8 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch',
-    'restmod'
+    'ngTouch'
   ])
-  .config(function (restmodProvider, CONFIGURATION) {
-    restmodProvider.rebase({
-      URL_PREFIX: CONFIGURATION.serverUrl
-    });
-  })
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {

@@ -128,9 +128,6 @@
 <script src="bower_components/angular-touch/angular-touch.js"></script>
 <script src="bower_components/angular-route/angular-route.js"></script>
 <script src="bower_components/angular-inflector/dist/angular-inflector.min.js"></script>
-<script src="bower_components/ng-module-introspector/ng-module-introspector.js"></script>
-<script src="bower_components/angular-mocks/angular-mocks.js"></script>
-<script src="scripts/js/jquery.stellar.min.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 
@@ -146,8 +143,13 @@
 <script src="scripts/controllers/login.js"></script>
 <script src="scripts/controllers/register.js"></script>
 <script src="scripts/controllers/signin.js"></script>
+<!-- endbuild -->
 
-
+<!-- build:js(.) scripts/mock.js -->
+<!-- mock:js -->
+<script src="bower_components/angular-mocks/angular-mocks.js"></script>
+<script src="test/mock/httpBackendMockDecorator.js"></script>
+<!-- endmock -->
 <!-- endbuild -->
 
 <!--TODO VERIFY-->

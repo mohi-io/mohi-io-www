@@ -34,5 +34,13 @@ describe('Service: api', function () {
         var response = api.getProjects();
         expect(response).toBe(validProjectCollectionResponse);
       }));
+
+    it('should return recent projects data',
+      inject(function (api, projectModelMock, validProjectCollectionResponse) {
+        projectModelMock.get.andReturn(validProjectCollectionResponse);
+
+        var response = api.getRecentProjects();
+        expect(response).toBe(validProjectCollectionResponse);
+      }));
   });
 });

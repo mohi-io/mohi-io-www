@@ -15,6 +15,9 @@ angular.module('mohiApp')
       getProjectDependencies: function (id) {
         return dependenciesModel.get({id: id});
       },
+      getRecentProjects: function () {
+        return projectModel.get();
+      },
       getProjects: function () {
         return projectModel.get();
       },

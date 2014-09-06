@@ -2,7 +2,7 @@
 
 describe('Service: api', function () {
 
-  beforeEach(module('mohiApp', 'mockedProjectDependencies', 'mockedProject'));
+  beforeEach(module('mohiApp'));
 
   beforeEach(ModuleBuilder.forModule('mohiApp')
     .serviceWithMocksFor('api', 'dependenciesModel', 'projectModel')

@@ -11,9 +11,9 @@ angular.module('mohiApp')
   .config(function ($provide) {
     $provide.decorator('$httpBackend', angular.mock.e2e.$httpBackendDecorator);
   })
-  .run(function ($httpBackend) {
+  .run(function ($httpBackend, _validProjectResponse_, _validProjectCollectionResponse_) {
     $httpBackend.whenGET(/views\/.*/).passThrough();
-    $httpBackend.whenGET(/.*\/projects/).respond({data: 'ddd'});
+    $httpBackend.whenGET(/.*\/projects/).respond(_validProjectCollectionResponse_);
 //
     // do real request
 //    $httpBackend.whenJSONP().passThrough();

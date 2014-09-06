@@ -3,7 +3,7 @@
 describe('Service: dependenciesModel', function () {
 
   // load the service's module
-  beforeEach(module('mohiApp', 'mockedProjectDependencies'));
+  beforeEach(module('mohiApp'));
 
   // instantiate service
   var httpBackend;

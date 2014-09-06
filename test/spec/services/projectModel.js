@@ -3,7 +3,7 @@
 describe('Service: projectModel', function () {
 
   // load the service's module
-  beforeEach(module('mohiApp', 'mockedProject'));
+  beforeEach(module('mohiApp'));
 
   // instantiate service
   var httpBackend;
@@ -47,11 +47,11 @@ describe('Service: projectModel', function () {
       version: "3"
     });
     expect(project.status).toEqual({
-      type: "unknown",
-      badges: {
-        svg: "http://img.shields.io/gemnasium/mathiasbynens/he.svg",
-        png: "http://img.shields.io/gemnasium/mathiasbynens/he.png",
-        png2x: "http://img.shields.io/gemnasium/mathiasbynens/he.png"
+      type: "uptodate",
+      badge: {
+        svg: "http://img.shields.io/david/webcomponents/generator-element.svg",
+        png: "http://img.shields.io/david/webcomponents/generator-element.png",
+        png2x: "http://img.shields.io/david/webcomponents/generator-element.png"
       }
     });
     expect(project.version).toEqual("1.8.1");
@@ -68,8 +68,8 @@ describe('Service: projectModel', function () {
     httpBackend.flush();
 
     //then
-    expect(projects.projects.length).toEqual(1);
-    expect(projects.count).toEqual(1);
+    expect(projects.projects.length).toEqual(3);
+    expect(projects.count).toEqual(3);
   });
 
 });

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('mockedProjectDependencies', [])
+angular.module('mohiApp')
   .value('validProjectDependenciesCollectionResponse', {
     dependencies: [
       {

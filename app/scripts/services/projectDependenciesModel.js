@@ -8,7 +8,7 @@
  * Factory in the mohiApp.
  */
 angular.module('mohiApp')
-  .factory('dependenciesModel', ['$resource', 'CONFIGURATION', function ($resource, CONFIGURATION) {
+  .factory('projectDependenciesModel', ['$resource', 'CONFIGURATION', function ($resource, CONFIGURATION) {
 
     var getServerUrl = function () {
       return CONFIGURATION.serverUrl;

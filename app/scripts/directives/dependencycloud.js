@@ -1,7 +1,13 @@
 'use strict';
-angular.module('d3').directive('dependencycloud', [
-  'd3',
-  function (d3) {
+
+/**
+ * @ngdoc directive
+ * @name mohiApp.directive:dependencycloud
+ * @description
+ * # dependencycloud
+ */
+angular.module('mohiApp')
+  .directive('dependencycloud', function (d3) {
     return {
       restrict: 'E',
       scope: {
@@ -88,4 +94,4 @@ angular.module('d3').directive('dependencycloud', [
       }
     };
   }
-]);
+);

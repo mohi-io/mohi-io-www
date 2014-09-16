@@ -19,6 +19,7 @@ describe('Service: dependenciesModel', function () {
   it("should call for given project dependencies", function() {
     //given
     httpBackend.when('GET', 'http://mohi.io/projects/3345df-343rfsv-322fdd/dependencies').respond(validProjectDependenciesCollectionResponse);
+    httpBackend.when('GET', 'http://localhost:1337/projects/3345df-343rfsv-322fdd/dependencies').respond(validProjectDependenciesCollectionResponse);
 
     //when
     var projectDependencies = dependenciesModel.get({id: "3345df-343rfsv-322fdd"});

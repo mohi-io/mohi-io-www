@@ -8,7 +8,7 @@
  * Controller of the mohiApp
  */
 angular.module('mohiApp')
-  .controller('HomeCtrl', function ($scope, api) {
+  .controller('HomeCtrl', function ($scope, api, CONFIGURATION, utils) {
     $scope.recentProjects = api.getRecentProjects();
     $scope.dependenciesCloud = api.getDependenciesCloud();
 
@@ -19,7 +19,9 @@ angular.module('mohiApp')
     };
 
     var getDependencyUrl = function (element) {
-      return 'http://search.maven.org/#search' + encodeURIComponent('|ga|1|a:' + element.name + ' g:' + element.group);
+      return CONFIGURATION.mavenCentralUrl + encodeURIComponent(
+        utils.sprintf(CONFIGURATION.mavenCentralSearchQuery, element.name, element.group)
+      );
     };
 
   });

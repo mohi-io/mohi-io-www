@@ -38,7 +38,8 @@ module.exports = function (grunt) {
         constants: {
           CONFIGURATION: {
             mavenCentralUrl: 'http://search.maven.org/#search',
-            mavenCentralSearchQuery: 'ga|1|a:%s g:%s'
+//            mavenCentralSearchQuery: '|ga|1|a:"%s" g:"%s"'
+            mavenCentralSearchQuery: '|gav|1|a:"%s" AND g:"%s"'
           }
         }
       },

@@ -2,7 +2,7 @@
 
 angular.module('mohiApp')
   .value('validDependenciesCollectionResponse', {
-    count: 3,
+    count: 15,
     "dependencies": [
       {
         "group": "com.googlecode.flyway",

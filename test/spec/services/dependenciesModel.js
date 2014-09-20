@@ -26,8 +26,8 @@ describe('Service: dependenciesModel', function () {
     httpBackend.flush();
 
     //then
-    expect(dependencies.dependencies.length).toEqual(3);
-    expect(dependencies.count).toEqual(3);
+    expect(dependencies.dependencies.length).toEqual(15);
+    expect(dependencies.count).toEqual(15);
   });
 
 });

@@ -12,21 +12,14 @@ angular.module('mohiApp')
     $scope.recentProjects = api.getRecentProjects();
     $scope.dependenciesCloud = api.getDependenciesCloud();
 
-//    api.getDependenciesCloud().$promise.then(function(response) {
-////      console.log(response.dependencies);
-//      $scope.dependenciesCloud = response.dependencies;
-//    });
-
-//    console.log($scope.recentProjects);
-//    console.log($scope.dependenciesCloud);
-
-    $scope.onDependencyCloudClick = function(element){
-      console.log("click", element);
-//      window.location = getDependencyUrl(element);
+    $scope.onDependencyCloudClick = function (element) {
+//      console.log("click", element);
+//      console.log(getDependencyUrl(element));
+      window.open(getDependencyUrl(element), '_blank');
     };
 
-    var getDependencyUrl = function(element) {
-      return 'http://search.maven.org'+ '/#search%7Cga%7C1%7Ca%3Aspring';
+    var getDependencyUrl = function (element) {
+      return 'http://search.maven.org/#search' + encodeURIComponent('|ga|1|a:' + element.name + ' g:' + element.group);
     };
 
   });

@@ -106,7 +106,7 @@ angular.module('mohiApp')
 
               for (var i in response.dependencies) {
                 var dep = response.dependencies[i];
-                var word = {text: dep.name, size: dep.count};
+                var word = {text: dep.name, size: dep.count, name: dep.name, group: dep.group};
                 dependencies.push(word);
               }
 

@@ -5,7 +5,7 @@ describe('Service: api', function () {
   beforeEach(module('mohiApp'));
 
   beforeEach(ModuleBuilder.forModule('mohiApp')
-    .serviceWithMocksFor('api', 'projectDependenciesModel', 'projectModel')
+    .serviceWithMocksFor('api', 'projectDependenciesModel', 'projectModel', 'dependenciesModel')
     .build());
 
   describe('test api method', function () {
@@ -40,6 +40,14 @@ describe('Service: api', function () {
         projectModelMock.get.andReturn(validProjectCollectionResponse);
 
         var response = api.getRecentProjects();
+        expect(response).toBe(validProjectCollectionResponse);
+      }));
+
+    it('should return dependencies data',
+      inject(function (api, dependenciesModelMock, validProjectCollectionResponse) {
+        dependenciesModelMock.get.andReturn(validProjectCollectionResponse);
+
+        var response = api.getDependenciesCloud();
         expect(response).toBe(validProjectCollectionResponse);
       }));
   });

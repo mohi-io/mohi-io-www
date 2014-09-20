@@ -8,7 +8,7 @@
  * Service in the mohiApp.
  */
 angular.module('mohiApp')
-  .service('api', function (projectDependenciesModel, projectModel) {
+  .service('api', function (projectDependenciesModel, projectModel, dependenciesModel) {
 
     // Public API here
     return {
@@ -25,8 +25,7 @@ angular.module('mohiApp')
         return projectModel.get({id: id});
       },
       getDependenciesCloud: function () {
-        return [ {text:'one',size: 1}, {text:'two',size:10}, {text:'three',size:100} ];
-//        return projectDependenciesModel.get();
+        return dependenciesModel.get();
       }
     };
 

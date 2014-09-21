@@ -451,7 +451,8 @@ module.exports = function (grunt) {
     'autoprefixer',
     'connect:test',
     'ngconstant',
-    'karma'
+    'karma',
+    'coveralls'
   ]);
 
   grunt.registerTask('build', [
@@ -481,4 +482,14 @@ module.exports = function (grunt) {
   grunt.registerTask('heroku', [
     'build'
   ]);
+
+  grunt.config('coveralls', {
+    options: {
+      debug: true,
+      coverage_dir: 'coverage',
+      dryRun: true,
+      force: true,
+      recursive: true
+    }
+  });
 };

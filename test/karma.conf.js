@@ -62,7 +62,8 @@ module.exports = function(config) {
     // Which plugins to enable
     plugins: [
       'karma-phantomjs-launcher',
-      'karma-jasmine'
+      'karma-jasmine',
+      'karma-coverage'
     ],
 
     // Continuous Integration mode
@@ -73,7 +74,7 @@ module.exports = function(config) {
 
     // level of logging
     // possible values: LOG_DISABLE || LOG_ERROR || LOG_WARN || LOG_INFO || LOG_DEBUG
-    logLevel: config.LOG_WARN
+    logLevel: config.LOG_WARN,
 
     // Uncomment the following lines if you are using grunt's server to run the tests
     // proxies: {
@@ -81,5 +82,17 @@ module.exports = function(config) {
     // },
     // URL root prevent conflicts with the site root
     // urlRoot: '_karma_'
+
+
+    preprocessors: {
+      'app/scripts/**/*.js': 'coverage'
+    },
+
+    reporters: ['progress', 'coverage'],
+
+    coverageReporter: {
+      type: "lcovonly",
+      dir: "coverage/"
+    }
   });
 };

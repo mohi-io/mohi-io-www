@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/mohi-io/mohi-io-www.svg)](https://travis-ci.org/mohi-io/mohi-io-www)
-[![Coverage Status](https://coveralls.io/repos/mohi-io/mohi-io-www/badge.png)](https://coveralls.io/r/mohi-io/mohi-io-www)
+[![Coverage Status](https://img.shields.io/coveralls/mohi-io/mohi-io-www.svg)](https://coveralls.io/r/mohi-io/mohi-io-www?branch=master)
 mohi-io-www
 ===========
 

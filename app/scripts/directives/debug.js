@@ -7,7 +7,7 @@
  * # debug
  */
 angular.module('mohiApp')
-  .directive('debug', function ($compile) {
+  .directive('debug', ['$compile', function ($compile) {
     return {
       terminal: true,
       priority: 1000000,
@@ -19,4 +19,4 @@ angular.module('mohiApp')
         element.after(clonedElement);
       }
     };
-  });
+  }]);

@@ -8,7 +8,7 @@
  * Controller of the mohiApp
  */
 angular.module('mohiApp')
-  .controller('HomeCtrl', function ($scope, api, CONFIGURATION, utils) {
+  .controller('HomeCtrl', ['$scope', 'api', 'CONFIGURATION', 'utils', function ($scope, api, CONFIGURATION, utils) {
     $scope.recentProjects = api.getRecentProjects();
     $scope.dependenciesCloud = api.getDependenciesCloud();
 
@@ -24,4 +24,4 @@ angular.module('mohiApp')
       );
     };
 
-  });
+  }]);

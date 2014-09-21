@@ -7,7 +7,7 @@
  * # dependencycloud
  */
 angular.module('mohiApp')
-  .directive('dependencycloud', function (d3) {
+  .directive('dependencycloud', ['d3', function (d3) {
     return {
       restrict: 'E',
       scope: {
@@ -146,5 +146,6 @@ angular.module('mohiApp')
         cloudFactory(dependencies);
       }
     };
-  }
+
+  }]
 );

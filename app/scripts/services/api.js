@@ -8,7 +8,7 @@
  * Service in the mohiApp.
  */
 angular.module('mohiApp')
-  .service('api', function (projectDependenciesModel, projectModel, dependenciesModel) {
+  .service('api', ['projectDependenciesModel', 'projectModel', 'dependenciesModel' ,function (projectDependenciesModel, projectModel, dependenciesModel) {
 
     // Public API here
     return {
@@ -29,4 +29,4 @@ angular.module('mohiApp')
       }
     };
 
-  });
+  }]);

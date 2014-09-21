@@ -8,10 +8,10 @@
  * Controller of the mohiApp
  */
 angular.module('mohiApp')
-  .controller('ProjectCtrl', function ($scope) {
+  .controller('ProjectCtrl', ['$scope', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
-  });
+  }]);

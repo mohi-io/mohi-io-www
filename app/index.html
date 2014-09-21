@@ -26,7 +26,7 @@
     <script src="js/icons-lte-ie7.js"></script><![endif]-->
 
 </head>
-<body ng-app="mohiApp">
+<body ng-app="mohiApp" ng-strict-di>
 <!--[if lt IE 7]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
@@ -131,8 +131,11 @@
 <!-- endbower -->
 <!-- endbuild -->
 
+<!-- build:js({.tmp,app}) scripts/d3.js -->
+<script src="scripts/js/d3.js"></script>
+<!-- endbuild -->
+
 <!-- build:js({.tmp,app}) scripts/scripts.js -->
-<script src="scripts/js/angular-d3.js"></script>
 <script src="scripts/app.js"></script>
 <script src="scripts/services/api.js"></script>
 <script src="scripts/services/projectModel.js"></script>

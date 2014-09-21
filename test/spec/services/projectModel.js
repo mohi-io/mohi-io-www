@@ -21,6 +21,7 @@ describe('Service: projectModel', function () {
   it("should call for given project", function () {
     //given
     httpBackend.when('GET', 'http://mohi.io/projects/3345df-343rfsv-322fdd').respond(validProjectResponse);
+    httpBackend.when('GET', 'http://localhost:1337/projects/3345df-343rfsv-322fdd').respond(validProjectResponse);
 
     //when
     var project = projectModel.get({id: "3345df-343rfsv-322fdd"});
@@ -61,6 +62,7 @@ describe('Service: projectModel', function () {
 
   it("should search projects", function () {
     //given
+    httpBackend.when('GET', 'http://localhost:1337/projects').respond(validProjectCollectionResponse);
     httpBackend.when('GET', 'http://mohi.io/projects').respond(validProjectCollectionResponse);
 
     //when

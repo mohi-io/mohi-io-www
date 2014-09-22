@@ -27,7 +27,7 @@ angular.module('mohiApp')
       badge: {
         svg: "http://img.shields.io/david/webcomponents/generator-element.svg",
         png: "http://img.shields.io/david/webcomponents/generator-element.png",
-        png2x: "http://img.shields.io/david/webcomponents/generator-element.png"
+        png2x: "gfx/notsoupdate2x.png"
       }
     },
     version: "1.8.1",
@@ -62,7 +62,7 @@ angular.module('mohiApp')
           badge: {
             svg: "http://img.shields.io/david/webcomponents/generator-element.svg",
             png: "http://img.shields.io/david/webcomponents/generator-element.png",
-            png2x: "http://img.shields.io/david/webcomponents/generator-element.png"
+            png2x: "/gfx/badges/outofdate2x.png"
           }
         },
         version: "1.8.1",
@@ -94,7 +94,7 @@ angular.module('mohiApp')
           badge: {
             svg: "http://img.shields.io/david/strongloop/express.svg",
             png: "http://img.shields.io/david/strongloop/express.png",
-            png2x: "http://img.shields.io/david/strongloop/express.png"
+            png2x: "/gfx/badges/unknown2x.png"
           }
         },
         version: "1.8.1",
@@ -126,7 +126,7 @@ angular.module('mohiApp')
           badge: {
             svg: "https://david-dm.org/bower/bower.svg",
             png: "https://david-dm.org/bower/bower.png",
-            png2x: "https://david-dm.org/bower/bower.png"
+            png2x: "/gfx/badges/uptodate2x.png"
           }
         },
         version: "1.8.1",

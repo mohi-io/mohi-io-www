@@ -51,8 +51,8 @@ describe('Service: projectModel', function () {
       type: "uptodate",
       badge: {
         svg: "http://img.shields.io/david/webcomponents/generator-element.svg",
-        png: "http://img.shields.io/david/webcomponents/generator-element.png",
-        png2x: "http://img.shields.io/david/webcomponents/generator-element.png"
+        png: "gfx/notsoupdate.png",
+        png2x: "gfx/notsoupdate2x.png"
       }
     });
     expect(project.version).toEqual("1.8.1");

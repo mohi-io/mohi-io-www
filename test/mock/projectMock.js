@@ -26,7 +26,7 @@ angular.module('mohiApp')
       type: "uptodate",
       badge: {
         svg: "http://img.shields.io/david/webcomponents/generator-element.svg",
-        png: "http://img.shields.io/david/webcomponents/generator-element.png",
+        png: "gfx/notsoupdate.png",
         png2x: "gfx/notsoupdate2x.png"
       }
     },
